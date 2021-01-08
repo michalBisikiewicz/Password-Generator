@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+<div class="container text-center">
+    <h1>Password Generator</h1>
+    <br>
+    <form action="{% url 'password' %}">
+        <select name="quantity">
+            <option value="1">1 password</option>
+            <option value="2">2 passwords</option>
+            <option value="3">3 passwords</option>
+            <option value="4">4 passwords</option>
+            <option value="5">5 passwords</option>
+            <option value="6">6 passwords</option>
+            <option value="7">7 passwords</option>
+            <option value="8">8 passwords</option>
+            <option value="9">9 passwords</option>
+            <option value="10">10 passwords</option>
+            <option value="11">11 passwords</option>
+            <option value="12">12 passwords</option>
+        </select>
+        <select name="length">
+            <option value="1">1 character</option>
+            <option value="2">2 characters</option>
+            <option value="3">3 characters</option>
+            <option value="4">4 characters</option>
+            <option value="5">5 characters</option>
+            <option value="6">6 characters</option>
+            <option value="7">7 characters</option>
+            <option value="8">8 characters</option>
+            <option value="9">9 characters</option>
+            <option value="10">10 characters</option>
+            <option value="11">11 characters</option>
+            <option value="12">12 characters</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" name="characters">
+        <label for="characters">Special characters</label>
+        <br>
+        <br>
+        <input type="checkbox" name="uppercase">
+        <label for="uppercase">Uppercase letters</label>
+        <br>
+        <br>
+        <input type="checkbox" name="numbers">
+        <label for="numbers">Numbers</label>
+        <br>
+        <input type="submit" value="GENERATE">
+    </form>
+    <br>
+    <a href={% url 'about' %}>About Page</a>
+
+</div>
+
+</body>
+</html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
